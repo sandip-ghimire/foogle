@@ -1,0 +1,72 @@
+
+<div id="linkModal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-light">
+            <div class="modal-header text-center">
+                <h4 class="modal-title font-weight-bold">Add Links</h4>
+                <button type="button" class="modal-title close" data-dismiss="modal" aria-label="Close">
+                    <span style="color:#fff">
+                        <i class="fas fa-times-circle"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="modal-body ">
+                <div class="add-items input-group">
+
+                    <div class="table-responsive tableblock">
+                        <table border="1" class='addurltable'>
+                            <tr>
+                                <th style="width:90%"></th>
+                                <th style="width:20%"></th>
+
+                            </tr>
+                            <tr>
+                                <td> <input type="text" class="form-control addlocalurltxt" id="localurl-item" name="urltxt" placeholder="Add URLs" style="width:100%"> </td>
+
+                                <td>
+                                    <div class="input-group-append" title="Click to add to the list" style="width:100%">
+                                        <button type="button" class="btn btn-info addlocalurlbtn"><i class="fas fa-check"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- URL LISTS -->
+
+                <div class="form-group textarealocal">
+
+                    <label for="localurl-list-txt"></label>
+                    <textarea readonly type="textarea" class="form-control form-rounded z-depth-1" id="localurl-list-txt" name="urllisttxt"
+                              rows="5"></textarea>
+                </div>
+
+
+                <!-- TOGGLE WIKI -->
+                <label>
+                    <input type="checkbox" checked id="wikiToggle" name="twiki"
+                           data-toggle="toggle" data-on="Wiki Enabled" data-off="Wiki Disabled" data-onstyle="primary" data-offstyle="secondary" data-width="140" data-height="38">
+                </label>
+
+            </div>
+
+            <div class="modal-footer d-flex">
+
+                <div class="linkitems d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary clearall">Clear All</button>
+                    <button type="button" class="btn btn-info saveLinks" data-dismiss="modal">Close</button>
+                </div>
+
+
+                <div class='errordiv'>
+                    <hr>
+                    <h6 class='errortxt'></h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

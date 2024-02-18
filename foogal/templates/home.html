@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="contentWrapper container-fluid">
+    <div class="container" style="width:80%">
+
+        <!-- RESULT PANEL -->
+
+        <div class="form-group maintextarea">
+            <div class="z-depth-1" id="result-txt" class="resulttxt">
+            </div>
+            <div class="splashtext">
+                <b>Hey, what's up there!</b> <br>
+                <span>Welcome to the custom search assistant. It allows you to feed your own data. Asking your query to a search assistant with a custom data feed is like having your own search engine taailored just for you, making finding stuff a breeze. Lets get started...</span>
+            </div>
+            <div class="ellipsis-icon loader"><span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span></div>
+        </div>
+
+
+        <!-- ADD URL -->
+
+        <div class="add-items input-group">
+
+            <div class="table-responsive tableblock">
+                <table border="1" class='asktable'>
+                    <tr>
+                        <th style="width:100%"></th>
+                        <th style="width:20%"></th>
+
+                    </tr>
+                    <tr>
+                        <td> <input type="text" class="form-control asktxt" id="ask-item" name="asktxt" placeholder="Ask" style="width:100%"> </td>
+
+                        <td>
+                            <div class="input-group-append" title="Send" style="width:100%">
+                                <button type="button" class="btn btn-info askbtn"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

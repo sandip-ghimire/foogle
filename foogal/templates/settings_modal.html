@@ -1,0 +1,101 @@
+
+<div id="settingModal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
+        <div class="modal-content bg-light">
+            <div class="modal-header">
+                <h5 class="modal-title">Settings</h5>
+                <button type="button" class="modal-title close" data-dismiss="modal" aria-label="Close">
+                    <span style="color:#fff">
+                        <i class="fas fa-times-circle"></i>
+                    </span>
+
+                </button>
+            </div>
+
+            <form id="settings-form">
+                {% csrf_token %}
+                <div class="modal-body">
+
+                    <div class="filesblock">
+
+                        <!-- Dropdown Options -->
+
+                        <div class="dropdown settingdropdown">
+                            <button class="btn btn-info dropdown-toggle setting-btn" type="button" selectedval="" data-toggle="dropdown">Choose setting
+                                <span class="caret"></span></button>
+                            <div class="dropdown-menu settingdropdownoptions"></div>
+
+                            <button type="button" class="btn flex-shrink-1 add-set opennewsetting" title="Add new setting">            
+                                <i class="fas fa-plus-circle"></i>     
+                            </button>
+
+                        </div>
+
+                        <!-- Drag Area -->
+                        <br>
+                        <div class="dropzone" id="fodz">
+                            <!-- <div class="dz-message" data-dz-message><span>Drop files here</span></div>-->
+                         </div>
+
+                         <!-- Error Section -->
+
+                        <div class='errordivsmall'>
+                            <hr>
+                            <small class='errortxtsmall'></small>
+                        </div>
+
+                        <hr>
+
+                        <!-- ADD URL -->
+
+                        <div class="add-items input-group">
+
+                            <div class="table-responsive tableblock">
+                                <table border="1" class='addurltable'>
+                                    <tr>
+                                        <th style="width:90%"></th>
+                                        <th style="width:20%"></th>
+                                                    
+                                    </tr>
+                                    <tr>
+                                        <td> <input type="text" class="form-control addurltxt" id="url-item" name="urltxt" placeholder="Add URLs" style="width:100%"> </td>
+
+                                        <td>
+                                            <div class="input-group-append" title="Click to add to the list" style="width:100%">
+                                                <button type="button" class="btn btn-info addurlbtn"><i class="fas fa-check"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                                        
+                        </div>
+                    </div>
+
+                    <!-- URL LISTS -->
+
+                    <div class="form-group textarea1">
+                    
+                        <label for="url-list-txt"></label>
+                        <textarea readonly type="textarea" class="form-control form-rounded z-depth-1" id="url-list-txt" name="urllisttxt"
+                            rows="3"></textarea>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex">
+                                
+                    <div class="settingitems d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-info saveSettings" data-dismiss="modal">Save changes</button>
+                    </div>				
+                                
+                                
+                    <div class='errordiv'>
+                        <hr>
+                        <h6 class='errortxt'></h6>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+:root {
+	--background: #2f5161;
+	--body-background: #e2f3f1db;
+	--button-background: #4a4a50;
+	--dark-background: #2a292e;
+	--light-grey: #434448;
+	--hover-grey: #434448;
+	--theme-color: #17a2b8;
+	--progress-theme: #0069d9;
+	--theme-color-light: #0a59b3;
+	--font: #070707;
+	--textbox-background: #dbd6d6;
+	--triangle-back: #343a40;
+	--triangle-hover: #2a292e;
+	--gradiantcolor: linear-gradient(90deg, var(--progress-theme) 0%, #b1a9a9 0%)
+}
+
+body{
+	font-family:arial;
+	font-weight:normal;
+	font-style:normal;
+	font-size:13px;
+	line-height:1.5em;
+	color:var(--font);
+	background-color: var(--body-background);
+}
+
+.nav-link:hover, .dropdown-item:hover, .btn-user:hover .dropdown-item:active{
+	color: var(--theme-color)!important;
+	background-color: var(--hover-grey)!important;
+}
+
+.nav-link, .bg-dark {
+background-color: var(--background)!important;
+}
+
+.modal-header {
+background-color: var(--background)!important;
+}
+
+.modal {
+color:#fff;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+
+.nav-link{
+	display: initial!important;
+	border:none!important;
+	color:#fff!important;
+}
+
+.txtbox {
+	background: var(--textbox-background);
+	border-radius: 25px;
+	padding-left: 58px;
+}
+
+.txtbox:focus {
+	background: var(--textbox-background)!important;
+}
+
+.iconbox {
+	font-size: 15px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	align-items: center;
+	position: absolute;
+	border-radius: 25px;
+	left:0px;
+	padding-left: 50px;
+	padding-top: 10px;
+	pointer-events: none;
+	color: var(--light-grey);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.loginbtn {
+	border-radius: 25px;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	position: relative;
+}
+
+.loginfailed {
+	color: rgb(250, 140, 26);
+	display: none;
+	text-align: center;
+	justify-content: center;
+}
+
+.errordiv {
+	color: rgb(250, 140, 26);
+	display: none;
+}
+
+.errortxt {
+	float: right;
+}
+
+.login-footer {
+    justify-content: center;
+}
+
+.addurltable {
+width:100%;
+}
+
+.dz-error-mark svg {
+border-radius: 40px!important;
+margin: -48px 0px 0px 41px!important;
+background:#9f2222fa!important;
+}
+
+.dz-success-mark svg {
+border-radius: 16px!important;
+margin: -49px 0px 0px 42px!important;
+background:green!important;
+}
+
+.dropzone {
+    min-height: 150px;
+    border: 2px dotted rgba(0,0,0,0.3)!important;
+    background: #a8d9d85c!important;
+    padding: 20px 20px;
+    color: #c4b6b6!important;
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 70px!important;
+    height: 70px!important;
+}
+
+.dropzone .dz-preview .dz-image img {
+    width: 80px!important;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    background: #c9e8e700!important;
+}
+
+.dropzone .dz-preview .dz-details .dz-size {
+    margin-bottom: 0!important;
+    font-size: 10px!important;
+}
+.dz-image img {
+    width: 80px !important;
+}
+.dropzone .dz-preview .dz-details {
+    height: 0!important;
+}
+
+.add-set {
+	background-color: #9c9b9a00;
+	border: none;
+	color: var(--theme-color);
+	font-size: 16px;
+	cursor: pointer;
+	/* position: relative; */
+}
+
+.add-set:hover {
+	color: var(--font);
+}
+
+.saveSettings, .saveLinks{
+    margin-left:10px;
+}
+
+.maintextarea {
+    background-color: #34edd70f!important;
+    /*border: solid 1px #17a2b821;*/
+    height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 40px;
+}
+
+#result-txt {
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+@keyframes colorChangeAnimation1 {
+    0%, 100% {
+        color: white;
+    }
+    25% {
+        color: black;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: white;
+    }
+}
+@keyframes colorChangeAnimation2 {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: black;
+    }
+}
+@keyframes colorChangeAnimation3 {
+    0%{
+        color: white;
+    }
+    25% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: black;
+    }
+    100% {
+        color: black;
+    }
+}
+.dot1 {
+    font-size: 25px;
+    animation: colorChangeAnimation1 1s infinite;
+}
+.dot2 {
+    font-size: 25px;
+    animation: colorChangeAnimation2 1s infinite;
+}
+.dot3 {
+    font-size: 25px;
+    animation: colorChangeAnimation3 1s infinite;
+}
+
+.loader {
+    margin-left: 10px;
+}

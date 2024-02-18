@@ -1,0 +1,12 @@
+Django==4.2.9
+gunicorn==20.0.4
+openai==1.11.0
+langchain==0.1.5
+langchain-openai==0.0.5
+unstructured==0.7.12
+tiktoken==0.5.2
+chromadb==0.4.22
+django_compressor==4.4
+django-minify-html==1.7.1
+pysqlite3-binary
+wikipedia==1.4.0
